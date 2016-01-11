@@ -56,6 +56,7 @@ RUN locale-gen en_US.UTF-8 &&\
   libssl-dev \
   imagemagick \
   nginx \
+  libsqlite3-dev \
   supervisor &&\
 # Run nginx in foreground
   echo "daemon off;\n" >> /etc/nginx/nginx.conf &&\

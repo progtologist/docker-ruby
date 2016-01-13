@@ -58,6 +58,7 @@ RUN locale-gen en_US.UTF-8 &&\
   nginx \
   libsqlite3-dev \
   supervisor &&\
+  npm -g install npm@next &&\
 # Run nginx in foreground
   echo "daemon off;\n" >> /etc/nginx/nginx.conf &&\
 # Clean up APT and temporary files when done
